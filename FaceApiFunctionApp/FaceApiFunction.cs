@@ -177,9 +177,9 @@ namespace FaceApiFunctionApp
 				sum += item.FaceAttributes.Emotion.Happiness;
 			}
 
-			// 平均値から小数点第3位を切り捨て
+			// 000.000の形式に変換して返却する
 			sum = (sum * 100000) / 1000;
-
+			
 			return sum.ToString("00.000");
 		}
 	}
